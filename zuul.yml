@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: zuul
+
+server:
+  port: 9999
+  
+zuul:
+  routes: 
+        profile-server:
+          path: /profiles/**
+          url: http://localhost:9001/profiles/
+          service-id: PROFILE
+          strip-prefix: true
+        authorization:
+          path: /login/**
+          url: http://localhost:9000/login/
+          service-id: AUTHORIZATION
+          strip-prefix: true
