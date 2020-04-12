@@ -1,21 +1,13 @@
 spring:
   application:
     name: actuator
-    
+  
+ 
 management:
-  endpoints:
+   endpoints:
     web:
-      exposure:
-        include: '*'    
+     exposure:
+      include: '*'    
         
-  datasource:
-    url: jdbc:mysql://localhost:3306/social
-    username: root
-    password: root
-    driverClassName: com.mysql.cj.jdbc.Driver
-  jpa:
-    hibernate:
-      ddl-auto: update
-
 server:
-   port: 9060
+   port: 9060    
