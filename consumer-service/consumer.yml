@@ -1,0 +1,21 @@
+ spring:
+  application:
+    name: consumer
+  datasource:
+    url: jdbc:mysql://localhost:3306/social
+    username: root
+    password: root
+    driverClassName: com.mysql.cj.jdbc.Driver
+  jpa:
+     hibernate:
+      ddl-auto: update 
+ 
+ management:
+   endpoints:
+    web:
+     exposure:
+      include: '*'    
+ 
+ server:
+   port: 9065    
+ 
