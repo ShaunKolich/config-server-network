@@ -14,6 +14,7 @@ zuul:
           strip-prefix: true
         authorization:
           path: /oauth/**
+          url: http://localhost:9000/oauth/
           service-id: AUTHORIZATION
           strip-prefix: true
         actuator:
