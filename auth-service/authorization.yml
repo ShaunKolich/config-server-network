@@ -1,7 +1,9 @@
 spring:
-  application:
-    name: authorization
-    
+  cloud:
+    config:
+      name: authorization
+      uri: http://localhost:8888/
+  
   datasource:
     url: jdbc:mysql://localhost:3306/authorization
     username: root
@@ -13,11 +15,11 @@ spring:
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
 
-security:
-  oauth2:
-    client:
-      client-id: mobile
-      client-secret: test
-
+  security:
+    oauth2:
+      client:
+        registration:
+            clientId: mobile
+            clientSecret: test  
 server:
-   port: 9000
+   port: 9089
