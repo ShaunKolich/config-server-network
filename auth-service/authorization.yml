@@ -13,5 +13,11 @@ spring:
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
 
+security:
+  oauth2:
+    client:
+      client-id: mobile
+      client-secret: test
+
 server:
    port: 9000
