@@ -17,9 +17,12 @@ spring:
 
   security:
     oauth2:
-     client:
-      client-id: first-client
-      client-secret: noonewilleverguess  
-      
+      client:
+        registration:
+          client-id: mobile
+          client-secret: test
+
+
 server:
    port: 9089
+
