@@ -20,6 +20,6 @@ security:
       client:
         registration:
             client-id: mobile
-            client-secret: testy
+            client-secret: test
 server:
    port: 9090
