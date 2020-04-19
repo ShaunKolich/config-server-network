@@ -14,13 +14,6 @@ spring:
       ddl-auto: update
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
-
-  security:
-    oauth2:
-      client:
-        registration:
-          client-id: mobile
-          client-secret: test
 keycloak:
   realm: Social-Network
   resource: Social-Network
@@ -30,5 +23,5 @@ keycloak:
   principal-attribute: preferred_username
   
 server:
-   port: 9090
+   port: 9091
 
