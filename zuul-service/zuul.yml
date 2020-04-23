@@ -13,8 +13,8 @@ zuul:
           service-id: PROFILE
           strip-prefix: true
         authorization:
-          path: /login/**
-          url: http://localhost:9000/login/
+          path: /users/**
+          url: http://localhost:9000/users/
           service-id: AUTHORIZATION
           strip-prefix: true
         actuator:
